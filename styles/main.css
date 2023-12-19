@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Noto+Serif&display=swap');
+
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+
+    --light-color: #F2EFDF;
+    --body-color: #798C8C;
+    --contrast-color: #59554C;
+    --highlight-color: 208, 217, 212;
 }
 
 body {
     font-size: 18px;
     line-height: 1.5;
+    background-color: var(--light-color);
+    color: var(--body-color);
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+
 }
 
 body > * {
@@ -13,8 +24,25 @@ body > * {
     padding-right: var(--horizontal-space);
 }
 
+h1, h2, h3 {
+    font-family: 'Bitter', serif;
+}
+
 h1 {
     line-height: 1.2;
+}
+
+nav {
+    background-color: rgba(var(--highlight-color), 0.7);
+}
+
+nav a {
+    color: var(--contrast-color);
+    text-decoration-color: var(--light-color);
+}
+
+nav a:hover {
+    color: var(--contrast-color);
 }
 
 body#about img {
@@ -27,6 +55,7 @@ body#portfolio img {
 
 p {
     max-width: 50em;
+    font-family: 'Noto Serif', serif;
 }
 
 body {
