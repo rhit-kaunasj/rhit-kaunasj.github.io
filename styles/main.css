@@ -37,12 +37,6 @@ h1 {
     margin: 20px;
 }
 
-nav {
-    /* background-color: rgba(var(--highlight-color), 0.25); */
-    /* position: fixed; */
-    /* margin: 20px; */
-}
-
 #navContainer a {
     color: var(--contrast-color);
 }
@@ -54,6 +48,11 @@ nav {
 #navContainer li {
     display: inline;
     margin-right: 10px;
+}
+
+#nav {
+    margin: 10px;
+    text-align: center;
 }
 
 body#about img {
@@ -102,6 +101,7 @@ body {
     #nav {
         position: fixed;
         margin-top: 30px;
+        text-align: left;
     }
 }
 
